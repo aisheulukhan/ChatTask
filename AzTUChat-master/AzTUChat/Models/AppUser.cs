@@ -10,5 +10,7 @@ namespace AzTUChat.Models
     {
         public string FullName { get; set; }
         public UserImage Image { get; set; }
+        public string ConnectionId { get; set; }
+
     }
 }

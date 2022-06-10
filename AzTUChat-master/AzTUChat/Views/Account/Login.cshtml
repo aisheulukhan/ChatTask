@@ -1,4 +1,4 @@
-﻿@model RegisterVM
+﻿@model LoginVM
 @{ 
     Layout = null;
 }
@@ -105,10 +105,11 @@
     <section class="area-login">
         <h1>Giris</h1>
         <div class="login">
-            <form action="#">
-                <input type="text" name="nome" placeholder="nome de usuário" autofocus />
-                <input type="password" name="senha" placeholder="sua senha" />
-                <input type="submit" value="entrar" />
+            <form method="post">
+                <input asp-for="UserName" placeholder="Istifadeci adiniz" />
+                <input asp-for="Password"  placeholder="Parolunuz" />
+                <input type="submit" value="Giris" />
+                <div asp-validation-summary="ModelOnly"></div>
             </form>
             <p>Hesaba ehtiyacin var? <a asp-action="Register">Qeydiyyatdan kec</a></p>
         </div>

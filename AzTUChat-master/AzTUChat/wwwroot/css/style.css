@@ -136,7 +136,7 @@
         background-repeat: no-repeat;
     }
 
-.online {
+.online, .offline {
     position: relative;
     top: 30px;
     left: 35px;
@@ -146,13 +146,16 @@
     border-radius: 13px;
     border: 3px solid #FAFAFA;
 }
-
+.offline {
+    background-color: red !important;
+}
 .desc-contact {
-    height: 43px;
-    width: 50%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+        height: 43px;
+        width: 50%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
 }
 
 .discussions .discussion .name {
